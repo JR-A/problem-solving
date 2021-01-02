@@ -33,6 +33,29 @@ public class ex2309 {
 			if(k!=i && k!=j) sb.append(heights[k]+"\n");
 		}
 		
+		//line 16~34 대체. 입력받으며 sum더하고 sum에서 i,j를 빼서 체크
+		/*
+		 	for(int i = 0; i < 9; i++) {
+	            height[i] = Integer.parseInt(br.readLine());
+	            sum += height[i];
+	        }
+	        Arrays.sort(height);
+	        
+			StringBuilder sb = new StringBuilder();
+	        Loop:
+	        for(int i = 0; i < 9; i++) {
+	            for(int j = i+1; j < 9; j++) {
+	                if(sum - height[i] - height[j] == 100) {
+	                    for(int k = 0; k < 9; k++) {
+	                        if(i == k || j == k) continue;
+	                        sb.append(height[k]).append("\n");
+	                    }
+	                    break Loop;
+	                }
+	            }
+	        }
+		*/
+		
 		System.out.print(sb);
 		br.close();
 	}
